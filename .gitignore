@@ -1,0 +1,70 @@
+# .gitignore for a Node.js + React Turborepo project
+
+# General
+# ----------------------------------------------------------------
+
+# Dependency directories
+# These should be installed via package managers, not checked into git
+node_modules/
+
+# Logs
+# ----------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+pnpm-debug.log*
+
+# Turborepo
+# ----------------------------------------------------------------
+# Cache directory for Turborepo
+.turbo/
+
+# Build & Output
+# ----------------------------------------------------------------
+# General build output folders for apps and packages
+dist/
+build/
+out/
+
+# Next.js (a common React framework used with Turborepo)
+.next/
+*.tsbuildinfo
+
+# Vercel deployment output
+.vercel/
+
+# Environment files
+# ----------------------------------------------------------------
+# Never commit secrets or local environment variables
+.env
+.env.local
+.env.*.local
+.tkn
+
+# Allow example env files to be checked in
+!*.env.example
+
+# Testing
+# ----------------------------------------------------------------
+# Test coverage reports
+coverage/
+.jest-cache
+
+# OS & Editor specific
+# ----------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
+.vscode/
+# If you want to share VSCode settings with your team,
+# you can un-ignore specific files like this:
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+# JetBrains IDEs (WebStorm, etc.)
+.idea/
